@@ -31,6 +31,7 @@ body {
   background-position: 0 -10%;
   background-repeat: no-repeat;
 }
+
 main {
   height: 100vh;
   display: flex;
@@ -107,4 +108,40 @@ h1 {
   font-weight: 700;
   text-decoration: none;
   color: inherit;
+}
+@media screen and (min-width: 376px) {
+  body {
+    background-image: url(images/pattern-background-desktop.svg);
+    background-position: 0% -40%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  html {
+    font-size: 20px;
+  }
+  .order-card_body {
+    margin-top: 1.6rem;
+    gap: 1rem;
+  }
+  .order-card_description {
+    font-size: 0.8rem;
+
+    max-width: 75%;
+    margin-top: 0px;
+  }
+  .order-card_annual-plan {
+    width: 78%;
+    font-size: 0.8rem;
+  }
+  .order-card_btn {
+    width: 78%;
+    font-size: 0.85rem;
+    padding: 0.7rem;
+  }
+  .order-card_annual-plan a {
+    font-size: 0.7rem;
+  }
+  .order-card {
+    width: 450px;
+  }
 }
